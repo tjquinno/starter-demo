@@ -1,6 +1,5 @@
 package com.example.demo;
 
-import javax.annotation.security.PermitAll;
 import javax.inject.Singleton;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -10,7 +9,6 @@ import javax.ws.rs.Path;
  */
 @Path("/hello")
 @Singleton
-@PermitAll
 public class HelloController {
 
     @GET

@@ -6,7 +6,6 @@ import org.eclipse.microprofile.metrics.annotation.Gauge;
 import org.eclipse.microprofile.metrics.annotation.Metric;
 import org.eclipse.microprofile.metrics.annotation.Timed;
 
-import javax.annotation.security.PermitAll;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.ws.rs.GET;
@@ -16,7 +15,6 @@ import java.util.Random;
 
 @Path("/metric")
 @RequestScoped
-@PermitAll
 public class MetricController {
 
     @Inject
